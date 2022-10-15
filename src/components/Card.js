@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-const Card = () => {
-    return (
+function Card() {
+    return(
         <div>
-            <h2>test</h2>
+            <h2>test</h2>   
+        <img src='https://placekitten.com/96/139' alt='card-img'/>
+            <p>placeholderplaceholderplaceholderplaceholderplaceholder</p>
         </div>
     )
 }
+
 
 export default Card;
