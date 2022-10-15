@@ -7,7 +7,7 @@ function App() {
   return (
       <><div className='NavBar'>
       <NavBar />
-    </div><div>
+    </div><div className='TravelCardDiv'>
         <TravelCard />
       </div></>
     
