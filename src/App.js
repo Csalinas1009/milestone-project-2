@@ -1,13 +1,14 @@
 import './styles/styles.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar';
-import Card from './components/Card';
+import TravelCard from './components/TravelCard';
 
 function App() {
   return (
       <><div className='NavBar'>
       <NavBar />
-    </div><div>
-        <Card />
+    </div><div className='TravelCardDiv'>
+        <TravelCard />
       </div></>
     
 
