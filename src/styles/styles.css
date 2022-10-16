@@ -8,5 +8,11 @@
 
 .NB {
   opacity: 50%;
-  margin-left: -450px;
+}
+
+.card-container{
+    display: flexbox;
+    display: inline-block;
+    margin-top: 5rem;
+    margin-left: 5rem;
 }
