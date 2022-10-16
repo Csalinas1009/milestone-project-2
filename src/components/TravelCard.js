@@ -8,16 +8,16 @@ function TravelCard() {
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="https://placekitten.com/96/140" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>ex: Christian visited Colorado!</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+         This is example text for the description of the travel location.
+         This will include time of year, weather conditions, and local 
+         sightseeing or notable monuments that this person visited!
         </Card.Text>
       </Card.Body>
       <ListGroup className="list-group-flush">
-        <ListGroup.Item>Placeholder 1</ListGroup.Item>
-        <ListGroup.Item>Placeholder 2</ListGroup.Item>
-        <ListGroup.Item>Placeholder 3</ListGroup.Item>
+        {/* <ListGroup.Item></ListGroup.Item>
+        <ListGroup.Item></ListGroup.Item> */}
       </ListGroup>
       <Card.Body>
         <Button href='./edit' type='button' value='input' size='sm'>Edit Post</Button>

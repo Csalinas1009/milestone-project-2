@@ -1,3 +1,5 @@
+
+
 function NavBar() {
     return <nav className="nav">
         <a href="/" className="site-title">The Traveler</a>
