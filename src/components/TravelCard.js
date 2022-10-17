@@ -1,29 +1,24 @@
 import React from 'react';
+import '../styles/styles.css'
+import { CardGroup } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
 
 function TravelCard() {
   return (
+   <CardGroup> 
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://placekitten.com/96/140" />
+      <Card.Img variant="top" src="https://placekitten.com/96/139" style={{height: '250px', width: '285px'}} />
       <Card.Body>
-        <Card.Title>ex: Christian visited Colorado!</Card.Title>
+        <Card.Title>Card Title</Card.Title>
         <Card.Text>
-         This is example text for the description of the travel location.
-         This will include time of year, weather conditions, and local 
-         sightseeing or notable monuments that this person visited!
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
         </Card.Text>
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        {/* <ListGroup.Item></ListGroup.Item>
-        <ListGroup.Item></ListGroup.Item> */}
-      </ListGroup>
-      <Card.Body>
-        <Button href='./edit' type='button' value='input' size='sm'>Edit Post</Button>
-        <Button href='/id/delete' type='button' value='input' size='sm'>Delete Post</Button>
+        <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
+    </CardGroup>  
   );
 }
 

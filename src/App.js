@@ -5,30 +5,18 @@ import Navigation from './components/NavBar';
 import TravelCard from './components/TravelCard';
 function App() {
   return (
-    <><div className='NB'>
+    <><><><div>
       <Navigation />
-    </div>
-      <div className='container'>
-        <div className='row'>
-          <div className='col'>
-            <TravelCard />
-          </div>
-          <div className='col'>
-            <TravelCard />
-          </div>
-          <div className='row'>
-            <div className='col'>
-              <TravelCard />
-            </div>
-            <div className='col'>
-              <TravelCard />
-            </div>
-          </div>
-        </div>
-
-
+    </div><div className='card-container'>
+        <TravelCard />
+        <TravelCard />
+      </div></><div className='card-container'>
+        <TravelCard />
+        <TravelCard />
+      </div></><div className='card-container'>
+        <TravelCard />
+        <TravelCard />
       </div></>
-
   )
 
 }
