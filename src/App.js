@@ -3,32 +3,23 @@ import './styles/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './components/NavBar';
 import TravelCard from './components/TravelCard';
+
+
 function App() {
+  //need to fetch API to pass from Parent to Child component.
   return (
-    <><div className='NB'>
+    <><><><div>
       <Navigation />
-    </div>
-      <div className='container'>
-        <div className='row'>
-          <div className='col'>
-            <TravelCard />
-          </div>
-          <div className='col'>
-            <TravelCard />
-          </div>
-          <div className='row'>
-            <div className='col'>
-              <TravelCard />
-            </div>
-            <div className='col'>
-              <TravelCard />
-            </div>
-          </div>
-        </div>
-
-
+    </div><div className='card-container'>
+        <TravelCard title='Colorado' />
+        <TravelCard title='Vegas'/>
+      </div></><div className='card-container'>
+        <TravelCard title='Mexico' />
+        <TravelCard title='England' />
+      </div></><div className='card-container'>
+        <TravelCard title='Germany' />
+        <TravelCard title='France'/>
       </div></>
-
   )
 
 }
