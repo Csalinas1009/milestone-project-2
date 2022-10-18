@@ -4,7 +4,10 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 
 function EditPost() {
-
+  return 
+  <div>
+    <div>Edit</div>
+  </div>
 }
 
 export default EditPost;
