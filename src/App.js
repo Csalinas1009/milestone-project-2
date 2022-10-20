@@ -4,6 +4,8 @@ import './styles/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Axios from 'axios';
 import TravelCard from './components/TravelCard'
+import Navigation from './components/NavBar';
+
 
 function App() {
   //useState hook for setting up our cards
@@ -19,22 +21,22 @@ useEffect(()=>{
 
 //render to page
 return(
-  <div>
-      <div>
+  <div className='NB'>
+      <Navigation/>   
+    <div>
         {cardData.map((cards)=>{
               return(
                 <div className='card-container'>
                   <TravelCard
                     key={cards.id}
                     Title={cards.gender}
-                    Text={cards.homePlanet}
+                    Text={cards.sayings[0]}
                      />
                 </div>
               );
         })}
-
       </div>
-  </div>
+  </div> 
 )  
 
 

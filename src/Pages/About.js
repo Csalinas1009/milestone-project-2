@@ -1,12 +1,16 @@
 import React from 'react'
+import Navigation from '../components/NavBar'
+import '../styles/styles.css'
 
 
 function About(){
 
     return(
-        <div>
-            <h2>About</h2>
-        </div>
+        <><div className='NB'>
+            <Navigation />
+        </div><div>
+                <h1>About</h1>
+            </div></>
     )
 }
 
