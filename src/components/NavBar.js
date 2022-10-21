@@ -15,6 +15,7 @@ function Navigation() {
             <Nav className="me-auto">
               <Nav.Link as={Link} to='/'>Home</Nav.Link>
               <Nav.Link as={Link} to='/About'>About</Nav.Link>
+              <Nav.Link as={Link} to='/NewPost'>Create a Post!</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

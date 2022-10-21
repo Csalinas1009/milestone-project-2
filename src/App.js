@@ -18,6 +18,8 @@ useEffect(()=>{
     })
 }, []);
 
+
+
 //render to page
 return(
   <div className='NB'>
