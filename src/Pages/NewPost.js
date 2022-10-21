@@ -5,34 +5,34 @@ import Form from 'react-bootstrap/Form';
 import Navigation from '../components/NavBar';
 import Axios from 'axios';
 
-function NewPost(){
-   
+function NewPost() {
+
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
     const [imgURL, setImgUrl] = useState('')
 
     const createPin = () => {
-            Axios.post('https://milestone2-travlr.herokuapp.com/pin', {title, description, imgURL})
-                .then((response)=>{
-                    alert('Post Created!')
-                })    
+        Axios.post('https://milestone2-travlr.herokuapp.com/pin', { title, description, imgURL })
+            .then((response) => {
+                alert('Post Created!')
+            })
     }
 
-   
-    return(
+
+    return (
         <><div className='NB'>
             <Navigation />
         </div><div className='new-post-container'>
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Create a new post!</Form.Label>
-                        <Form.Control maxlength='50' type="text" placeholder="Enter title.." onChange={(event) =>{setTitle(event.target.value)}} />
+                        <Form.Control maxlength='50' type="text" placeholder="Enter title.." onChange={(event) => { setTitle(event.target.value) }} />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Image</Form.Label>
-                        <Form.Control placeholder="Image url.." onChange={(event) => {setImgUrl(event.target.value)}}/>
+                        <Form.Control placeholder="Image url.." onChange={(event) => { setImgUrl(event.target.value) }} />
                         <Form.Label>Description</Form.Label>
-                        <Form.Control placeholder="Description..." onChange={(event) =>{setDescription(event.target.value)}}/>
+                        <Form.Control placeholder="Description..." onChange={(event) => { setDescription(event.target.value) }} />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     </Form.Group>
@@ -40,8 +40,8 @@ function NewPost(){
                         Submit
                     </Button>
                 </Form>
-            </div></> 
-        
+            </div></>
+
     )
 }
 

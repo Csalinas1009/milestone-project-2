@@ -6,7 +6,7 @@ import Card from "react-bootstrap/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenSquare, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
-function TravelCard({pin}) {
+function TravelCard({ pin }) {
   return (
     <CardGroup>
       <Card style={{ width: "18rem" }}>
