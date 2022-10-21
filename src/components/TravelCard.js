@@ -6,18 +6,18 @@ import Card from "react-bootstrap/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenSquare, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
-function TravelCard(props) {
+function TravelCard({pin}) {
   return (
     <CardGroup>
       <Card style={{ width: "18rem" }}>
         <Card.Img
           variant="top"
-          src={props.image}
+          src={pin.imgURL}
           style={{ height: "250px", width: "285px" }}
         />
         <Card.Body>
-          <Card.Title>{props.Title}</Card.Title>
-          <Card.Text>{props.Text}</Card.Text>
+          <Card.Title>{pin.title}</Card.Title>
+          <Card.Text>{pin.description}</Card.Text>
           <div className="btns">
             <div className="editBtn">
               <Button variant="primary">
