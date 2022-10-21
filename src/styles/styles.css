@@ -20,6 +20,18 @@
   text-align: center;
 }
 
+
+.new-post-container{
+      margin: auto;
+      width: 50%;
+      padding: 10rem;
+      text-align: center;
+      color: rgb(163, 181, 185);
+      font-weight: bold;
+      font-size: 1.5rem;
+}
+
+
 .btns{
   display: inline-block;
 }
