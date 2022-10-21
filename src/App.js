@@ -9,13 +9,12 @@ import Navigation from './components/NavBar';
 
 function App() {
   //useState hook for setting up our cards
-  const [cardData, setCardData] = useState([]);
+  const [pins, setPins] = useState([]);
 
 useEffect(()=>{
-  //fetch request using a sample API right now before I get the real API from back-end//
-    Axios.get('https://api.sampleapis.com/futurama/characters').then((response) =>{
-      setCardData(response.data)
-      console.log(setCardData)
+  //get request from back-end database
+    Axios.get('https://milestone2-travlr.herokuapp.com/pin').then((response) =>{
+      setPins(response.data)
     })
 }, []);
 
@@ -24,14 +23,12 @@ return(
   <div className='NB'>
       <Navigation/>   
     <div>
-        {cardData.map((cards)=>{
+        {pins && pins.map((pin)=>{
               return(
                 <div className='card-container'>
                   <TravelCard
-                    key={cards.id}
-                    Title={cards.gender}
-                    Text={cards.sayings[0]}
-                     />
+                    pin={pin}                 
+                  />
                 </div>
               );
         })}
