@@ -6,7 +6,7 @@ import Card from "react-bootstrap/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenSquare, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
-function TravelCard({ pin }) {
+function TravelCard({ pin, deletePin}) {
   return (
     <CardGroup>
       <Card style={{ width: "18rem" }}>
@@ -25,7 +25,7 @@ function TravelCard({ pin }) {
               </Button>
             </div>
             <div className="delBtn">
-              <Button variant="primary">
+              <Button variant='primary' onClick={()=> deletePin(pin._id)}  >
                 <FontAwesomeIcon icon={faTrashCan}></FontAwesomeIcon>
               </Button>
             </div>
