@@ -18,7 +18,15 @@ function App() {
     })
   }, []);
 
-
+  const deletePin = async (id) => {
+    try {
+      const res = await Axios.delete(`https://milestone2-travlr.herokuapp.com/pin/${id}`);
+      console.log({ res }, res.response.data);
+     } catch (error) { 
+     window.location.reload();
+      console.log({ error });
+  }
+}
 
   //render to page
   return (
@@ -30,6 +38,7 @@ function App() {
             <div className='card-container'>
               <TravelCard
                 pin={pin}
+                deletePin={deletePin}
               />
             </div>
           );
