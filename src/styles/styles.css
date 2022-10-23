@@ -37,15 +37,15 @@
 }
 
 .editBtn{
-position: relative;
-right: 11.2rem;
-top: 2.4rem;
+position: absolute;
+left: .1rem;
+top: 23rem;
 
 }
 
 
 .delBtn{
-  position: relative;
-  left: 11.2rem;
-
+  position: absolute;
+  top: 23rem;
+  left: 3rem;
 }
