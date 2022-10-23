@@ -33,3 +33,62 @@
   float: left;
   padding: 5px;
 }
+
+h1{
+  text-align: center;
+  color:blanchedalmond;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+h2{
+  text-align: center;
+  color: beige;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5px;
+}
+
+p{
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.CT{
+  text-align: center;
+}
+
+.group1{
+  display: inline-flex;
+  margin-top: 20px;
+  margin-left: 65px;
+  padding: 50px 540px;
+  column-gap: 50px;
+}
+
+.group2{
+  display: flex;
+  margin-top: 20px;
+  margin-left: 65px;
+  padding: 50px 540px;
+  column-gap: 50px;
+}
+
+.about{
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: black;
+  height: 845px;
+  width: 280px;;
+}
+
+.AbPage{
+  display: inline-flex;
+}
+
+.group{
+  position: relative;
+  right: 170px;
+  top: 50px;
+}
