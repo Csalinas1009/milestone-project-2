@@ -13,12 +13,10 @@ function NewPost() {
 
     const createPin = async () => {
         try {
-          const res = await Axios.delete(`https://milestone2-travlr.herokuapp.com/pin`, { title, imgURL, description});
+          const res = await Axios.post(`https://milestone2-travlr.herokuapp.com/pin/`, { title, imgURL, description});
           console.log({ res }, res.response.data);
          } catch (error) { 
-          alert('Post Created!');
-          window.location.reload();
-          
+          alert('Post Created!');          
       }
     }
 
@@ -30,7 +28,7 @@ function NewPost() {
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Create a new post!</Form.Label>
-                        <Form.Control maxlength='50' type="text" placeholder="Enter title.." onChange={(event) => { setTitle(event.target.value) }} />
+                        <Form.Control type="text" placeholder="Enter title.." onChange={(event) => { setTitle(event.target.value) }} />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Image</Form.Label>
