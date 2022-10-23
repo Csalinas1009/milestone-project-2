@@ -40,7 +40,7 @@ function App() {
             <div className='card-container'>
               <TravelCard
                 pin={pin}
-                deletePin={deletePin}
+                deletePin={deletePin} 
               />
             </div>
           );
