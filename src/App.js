@@ -23,8 +23,9 @@ function App() {
       const res = await Axios.delete(`https://milestone2-travlr.herokuapp.com/pin/${id}`);
       console.log({ res }, res.response.data);
      } catch (error) { 
-     window.location.reload();
-      console.log({ error });
+      alert('Post Deleted!');
+      window.location.reload();
+      
   }
 }
 
