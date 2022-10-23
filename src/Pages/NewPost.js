@@ -11,13 +11,15 @@ function NewPost() {
     const [description, setDescription] = useState('')
     const [imgURL, setImgUrl] = useState('')
 
-    const createPin = async () => {
+    const createPin = async (event) => {
+        event.preventDefault()
         try {
-          const res = await Axios.post(`https://milestone2-travlr.herokuapp.com/pin/`, { title, imgURL, description});
-          console.log({ res }, res.response.data);
-         } catch (error) { 
-          alert('Post Created!');          
-      }
+            const res = await Axios.post(`https://milestone2-travlr.herokuapp.com/pin/`, { title, imgURL, description });
+            console.log(res);
+            alert('Post Created!');
+        } catch (error) {
+            console.log(error);
+        }
     }
 
 

@@ -13,7 +13,7 @@ function TravelCard({pin, deletePin}) {
       {Array.from({ length: 1 }).map((_, idx) => (
         <Col>
           <Card>
-            <Card.Img variant="top" src={pin.imgURL} style={{ height: "325px", width: "400px" }}/>
+            <Card.Img variant="top" src={pin.imgURL} style={{ height: "275px", width: "325px" }}/>
             <Card.Body>
               <Card.Title>{pin.title}</Card.Title>
               <Card.Text>
