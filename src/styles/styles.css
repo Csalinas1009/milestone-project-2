@@ -11,7 +11,7 @@
 }
 
 .card-container{
-  display: flex;
+  display: inline-flex;
   width: 250px;
   margin-top: 5rem;
   margin-left: 10rem;
@@ -37,11 +37,15 @@
 }
 
 .editBtn{
-  float: left;
-  padding: 5px;
+position: relative;
+right: 11.2rem;
+top: 2.4rem;
+
 }
 
+
 .delBtn{
-  float: left;
-  padding: 5px;
+  position: relative;
+  left: 11.2rem;
+
 }

@@ -11,6 +11,7 @@ function App() {
   //useState hook for setting up our cards
   const [pins, setPins] = useState([]);
 
+
   useEffect(() => {
     //get request from back-end database
     Axios.get('https://milestone2-travlr.herokuapp.com/pin').then((response) => {
@@ -23,8 +24,9 @@ function App() {
       const res = await Axios.delete(`https://milestone2-travlr.herokuapp.com/pin/${id}`);
       console.log({ res }, res.response.data);
      } catch (error) { 
-     window.location.reload();
-      console.log({ error });
+      alert('Post Deleted!');
+      window.location.reload();
+      
   }
 }
 
