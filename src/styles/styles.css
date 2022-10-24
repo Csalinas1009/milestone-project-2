@@ -18,7 +18,9 @@
   padding: 10px 10px;
   column-gap: 250px;
   text-align: center;
+  font-weight: bold;
 }
+
 
 
 .new-post-container{
@@ -107,4 +109,11 @@ p{
   position: relative;
   right: 170px;
   top: 50px;
+}
+
+.edit-form{
+  position: relative;
+  bottom: 350px;
+  height: 325px;
+  width: 275px;
 }
