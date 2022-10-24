@@ -9,9 +9,11 @@ import Row from 'react-bootstrap/Row';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenSquare, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
+
 function TravelCard({pin, deletePin}) {
   
   const [showForm, setShowForm] = useState(false);
+
 
   return ( 
     <Row xs={12} className="g-4">
@@ -40,6 +42,7 @@ function TravelCard({pin, deletePin}) {
           </Card>
         </Col><div className="edit-form">
             {showForm && <EditForm pin={pin} setShowForm={setShowForm} />}
+            {showForm && <Button style={{position: 'relative', left: '140px', bottom: '35px'}} type="button" class='btn-close' aria-label="Close" onClick={() => setShowForm(false)}>X</Button>}
           </div></>
       ))}
     </Row>  
