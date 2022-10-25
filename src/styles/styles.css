@@ -12,12 +12,12 @@
 
 .card-container{
   display: inline-flex;
-  width: 250px;
   margin-top: 5rem;
   margin-left: 10rem;
   padding: 10px 10px;
   text-align: center;
   font-weight: bold;
+  overflow: visible;
 }
 
 
