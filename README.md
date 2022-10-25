@@ -32,7 +32,7 @@ You may also see any lint errors in the console.
 
 ## Deployment
 
-Heroku: https://milestone-mern.herokuapp.com
+Heroku: https://milestone-travelr.herokuapp.com/
 
 ### Front-End Contributors
 
