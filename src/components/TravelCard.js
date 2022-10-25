@@ -16,11 +16,11 @@ function TravelCard({pin, deletePin}) {
 
 
   return ( 
-    <Row xs='auto' className="row gx-5">
+    <Row xs='auto' className="g-5">
       {Array.from({ length: 1 }).map((_, idx) => (
         <><Col>
           <Card>
-            <Card.Img variant="top" src={pin.imgURL} style={{ height: "375px", width: "450px"}} />
+            <Card.Img variant="top" src={pin.imgURL} style={{height: '450px%', width: '450px'}} />
             <Card.Body>
               <Card.Title>{pin.title}</Card.Title>
               <Card.Text style={{ color: 'black' }}>

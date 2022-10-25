@@ -8,6 +8,8 @@
 
 .NB {
   opacity: 85%;
+  position: sticky;
+  z-index: 100;
 }
 
 .card-container{
