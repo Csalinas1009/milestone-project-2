@@ -47,4 +47,4 @@ Heroku: https://milestone-mern.herokuapp.com
 
 ## Preview
 
-![Capture](https://user-images.githubusercontent.com/103010057/197856188-cfa40626-6b00-4edd-abe9-8c211c307102.JPG)
+![Capture](https://user-images.githubusercontent.com/103010057/197874816-ce0849fa-a4ec-4fdd-8642-9f10a6522592.JPG)
