@@ -57,6 +57,8 @@ h1{
   color:blanchedalmond;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
+  text-decoration: underline;
+  margin-left: 103px;
 }
 
 h2{
@@ -97,8 +99,11 @@ p{
   border: 2px solid black;
   border-radius: 20px;
   background-color: black;
-  height: 845px;
-  width: 280px;;
+  height: 230px;
+  width: 280px;
+  margin-top: 300px;
+  margin-left: 180px;
+  opacity: 80%;
 }
 
 .AbPage{
@@ -109,6 +114,9 @@ p{
   position: relative;
   right: 170px;
   top: 50px;
+  right: 180px;
+  margin-left: -190px;
+  margin-top: 25px;
 }
 
 .edit-form{
@@ -119,3 +127,6 @@ p{
   left: 50px;
 }
 
+.titles{
+  margin-left: 85px;
+}

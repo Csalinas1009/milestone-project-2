@@ -30,12 +30,16 @@ function About() {
             </>
             <div className="group">
               <h1>Meet The Team</h1>
-              <h2>Frontend Developers</h2>
+              <div className="titles">
+                <h2>Frontend Developers</h2>
+              </div>
               <div className="group1">
                 <AboutIan></AboutIan>
                 <AboutChris></AboutChris>
               </div>
-              <h2>Backend Developers</h2>
+              <div className="titles">
+                <h2>Backend Developers</h2>
+              </div>
               <div className="group2">
                 <AboutGio></AboutGio>
                 <AboutAar></AboutAar>
