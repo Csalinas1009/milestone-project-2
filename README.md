@@ -6,6 +6,14 @@ Welcome to Travelr! This is the front-end section of our application, if you wou
 This is a blog based application where a user can manipulate their posts! (create, update, delete).
 
 
+## API paths
+
+        Post API: Axios.post("/")
+        Get API: Axios.get("/")
+        Get by ID Axios.get("/:id")
+        Delete by ID Axios.delete("/:id")
+        update by ID Axios.patch("/:id")
+
 ## `npm install`
 
 This will install any necessary dependencies for this project to run properly
